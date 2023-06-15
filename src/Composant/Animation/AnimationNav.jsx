@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Lottie from "react-lottie";
-import animationData from "../../assets/animatioLogo.json";
+import animationData from "../../assets/Animation/animatioLogo.json";
 class AnimationNav extends Component {          //Animation pour fichier .json avec react
     render() {
         const defaultOptions = {

@@ -1,7 +1,8 @@
-import {useState , useEffect} from "react"
-import { Col, Container, Row } from "react-bootstrap"
-import  ArrowRightCircle  from '../assets/arrow-right-circle.svg'
-import AnimationBanner from "./Animation/AnimationBanner"
+import {useState , useEffect} from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import PhotoProfile from "../assets/blank-profile-picture.webp";
+import  ArrowRightCircle  from '../assets/arrow-right-circle.svg';
+import AnimationBanner from "./Animation/AnimationBanner";
 
 export const Banner = () => {
     /*********Code pour changement de mots*************/
@@ -47,14 +48,17 @@ export const Banner = () => {
     }
 
     return (
-        <section className="banner">
+        <section className="banner" id="banner">
             <Container>
-                <Row className="align-item-center">
+                <Row>
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Bonjour, voici mon portfolio</span>
                         <h1>{"Je suis un : "}<span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt necessitatibus voluptatem recusandae soluta non enim perferendis. Beatae ullam sequi explicabo voluptates distinctio ipsa quasi rerum, est voluptas alias, asperiores cum.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <img src={ArrowRightCircle} alt="" /></button>
+                        <div className="bottom-banner">
+                          <img className="profile-photo" src={PhotoProfile} alt="" />
+                          <button onClick={() => console.log('connect')}>Let's Connect <img src={ArrowRightCircle} alt="" /></button>
+                        </div>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                         <div className="animation-banner">
