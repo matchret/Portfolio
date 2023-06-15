@@ -56,7 +56,7 @@ export const Banner = () => {
                         <h1>{"Je suis un : "}<span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt necessitatibus voluptatem recusandae soluta non enim perferendis. Beatae ullam sequi explicabo voluptates distinctio ipsa quasi rerum, est voluptas alias, asperiores cum.</p>
                         <div className="bottom-banner">
-                          <img className="profile-photo" src={PhotoProfile} alt="" />
+                          <img className="profile-photo" src={PhotoProfile} alt="profile-photo co" />
                           <button onClick={() => console.log('connect')}>Let's Connect <img src={ArrowRightCircle} alt="" /></button>
                         </div>
                     </Col>

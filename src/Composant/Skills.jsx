@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Carousel } from "react-bootstrap";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// requires a loader
 import Meter1 from '../assets/meter1.svg';
 import Meter2 from '../assets/meter2.svg';
 import Meter3 from '../assets/meter3.svg';

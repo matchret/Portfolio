@@ -1,23 +1,18 @@
-import { Component } from 'react';
-import Lottie from "react-lottie";
+import React from 'react';
+import {useLottie} from "lottie-react";
 import animationData from "../../assets/Animation/animationBanner.json"
 
-class AnimationBanner extends Component {          //Animation pour fichier .json avec react
-
-    render() {
-        const defaultOptions = {
-            loop: true,
-            autoplay: true,
-            animationData: animationData,
-            renderer: 'svg',
-            stop: false
-            
-        }
-        return (
-               <Lottie
-                options={defaultOptions}
-               />
-        )
-    };  
-}
+const AnimationBanner = () => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        renderer: 'svg',
+        
+    }
+  
+    const { View } = useLottie(defaultOptions);
+  
+    return <>{View}</>;
+  };
 export default AnimationBanner;

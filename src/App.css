@@ -163,14 +163,9 @@ span.navbar-text {
 }
 
 
-.animation-nav {
+.nav-logo{
+  width: 200px;
   transform: translateY(-20px);
-}
-.lottie  {
-  position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -212,7 +207,6 @@ span.navbar-text {
     margin-bottom: 10px;
   }
 }
-
 
 
 /************Banner********************/
