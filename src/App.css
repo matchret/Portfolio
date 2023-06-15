@@ -302,7 +302,8 @@ span.navbar-text {
 
 .banner .profile-photo{
   aspect-ratio: 1/1;
-  width: 35%;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
 
 }

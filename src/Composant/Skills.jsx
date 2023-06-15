@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Carousel } from "react-bootstrap";
-// requires a loader
 import Meter1 from '../assets/meter1.svg';
 import Meter2 from '../assets/meter2.svg';
 import Meter3 from '../assets/meter3.svg';
