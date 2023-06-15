@@ -8,7 +8,7 @@ import LogoC from '../assets/Image/Technology/C-Sharp-logo.png';
 import LogoPython from '../assets/Image/Technology/Python-logo.png';
 import LogoReact from '../assets/Image/Technology/React-icon.png';
 import LogoNodeJS from '../assets/Image/Technology/Node.js_logo.svg';
-import LogoHTML from '../assets/Image/Technology/HTML5_Logo.png';
+import LogoHTML from '../assets/Image/Technology/HTML5_logo.png';
 import LogoCss from '../assets/Image/Technology/CSS3_logo.png';
 import LogoCisco from '../assets/Image/Technology/logo-cisco.png';
 import LogoPacket from '../assets/Image/Technology/packet-Tracer.png';
