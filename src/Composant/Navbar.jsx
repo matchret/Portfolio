@@ -16,7 +16,6 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  const [toggled, setToggled] = useState(false);
 
 
   useEffect(() => {

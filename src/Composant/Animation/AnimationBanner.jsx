@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLottie} from "lottie-react";
-import animationData from "../../assets/Animation/animationBanner.json"
+import animationData from "../../assets/Animation/animationBanner.json";
 
 const AnimationBanner = () => {
     const defaultOptions = {
@@ -8,11 +8,13 @@ const AnimationBanner = () => {
         autoplay: true,
         animationData: animationData,
         renderer: 'svg',
+        height:""
         
     }
   
     const { View } = useLottie(defaultOptions);
   
-    return <>{View}</>;
+    return <div className='animation-banner'>{View}</div>;
   };
+
 export default AnimationBanner;
