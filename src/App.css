@@ -184,7 +184,6 @@ span.navbar-text {
   .navbar-collapse{
     display: flex;
     transform: translateY(-20px); 
-    background-color: #121212;
   }
 
   span.navbar-text{
@@ -213,7 +212,7 @@ span.navbar-text {
 .banner {
   margin-top: 0;
   padding: 15vh 0 100px 0;
-  background-image: url(./assets/0fb760580d4f8dc79525b864079ac332.jpg);
+  background-image: url(./assets/nasa.jpg);
   background-position: top center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -318,6 +317,23 @@ span.navbar-text {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+.banner .profile-photo {
+  width: 20vw;
+  height: 20vw;
+}
+.banner h1 {
+  min-height: 195px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .banner .profile-photo {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
 /************  Skills   *************/
 .skill{
   background-color: #121212;
@@ -333,10 +349,15 @@ span.navbar-text {
   width: auto;
 }
 
-.carousel .d-block {
+img.d-block {
   margin-left: 38%;
   margin-bottom: 7vw ;
   width: 25%;
+}
+
+.carousel-caption{
+  position:absolute; 
+  bottom: 30px;
 }
 
 .carousel .framework{

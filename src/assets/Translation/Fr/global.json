@@ -9,6 +9,17 @@
     "Conne":"Se connecté"
 },
 "banner":{
-    
+    "tag":"Bonjour, mon nom est Mathieu",
+    "je":"Je suis un: ",
+    "list":["Développeur Web", "UI/UX Désigneur", "Technicien de Réseaux"],
+    "Presentation":"Je suis présentement étudiant en informatique à l'Université Laval. J'ai toujours été intérésé dans les domaines technologiques ce qui ma valu un diplome collégiale en génie électrique/télécommunications et réseaux. J'espère continuer mon cheminement dans le domaine avec plusieurs projets intérésant."
+},
+"Skills":{
+    "title":"Compétence",
+    "s1":" ",
+    "s2":"",
+    "s3":"",
+    "s4":""
+
 }
 }

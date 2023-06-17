@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Carousel } from "react-bootstrap";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Meter1 from '../assets/meter1.svg';
 import Meter2 from '../assets/meter2.svg';
 import Meter3 from '../assets/meter3.svg';
@@ -28,37 +30,37 @@ export const Skills = ()=>{
                 <Row>
                     <Carousel slide="true">
                         <Carousel.Item>
-                            <img className="d-block" src={Meter1} alt="First slide" />
+                        <LazyLoadImage className="d-block" alt="First slide"  src={Meter1}/>
                             <Carousel.Caption>
                                 <h4>First slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block" src={Meter2} alt="Second slide" />
+                        <LazyLoadImage className="d-block" alt="2 slide" src={Meter2} />
                             <Carousel.Caption>
                             <h4>Second slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block" src={Meter3} alt="Third slide" />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter3} />
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block" src={Meter3} alt="Third slide" />
+                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width}/>
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block" src={Meter3} alt="Third slide" />
+                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width} />
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block" src={Meter3} alt="Third slide" />
+                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width}/>
                             <Carousel.Caption>
                                 <h3>Third slide label</h3>
                             </Carousel.Caption>
@@ -72,20 +74,20 @@ export const Skills = ()=>{
                     <Carousel slide="true">
                         <Carousel.Item>
                             <div className='framework'>
-                                <img src={LogoHTML} alt="HTML"/>
-                                <img src={LogoCss} alt='CSS'/>
-                                <img src={LogoNodeJS} alt='Node.js'/>
-                                <img src={LogoReact} alt='React'/>
-                                <img src={LogoPython} />
+                                <LazyLoadImage alt="React" height={LogoReact.height} src={LogoReact} width={LogoReact.width}  />
+                                <LazyLoadImage alt="HTML" height={LogoHTML.height} src={LogoHTML} width={LogoHTML.width}  />
+                                <LazyLoadImage alt="CSS" height={LogoCss.height} src={LogoCss} width={LogoCss.width}  />
+                                <LazyLoadImage alt="HTML" height={LogoNodeJS.height} src={LogoNodeJS} width={LogoNodeJS.width}  />
+                                <LazyLoadImage alt="Python" height={LogoPython.height} src={LogoPython} width={LogoPython.width}/>
                             </div>                        
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className='framework'>
-                                <img src={LogoCPlus} alt="C++"/>
-                                <img src={LogoC} alt='C' />
-                                <img src={LogoCisco} alt="Cisco"/>
-                                <img src={LogoPacket} alt='Packet-tracer'/>
-                                <img src={LogoPython} alt='Python'/>
+                                <LazyLoadImage alt="C++" height={LogoCPlus.height} src={LogoCPlus} width={LogoCPlus.width} />
+                                <LazyLoadImage alt="C" height={LogoC.height} src={LogoC} width={LogoC.width} />
+                                <LazyLoadImage alt="Cisco" height={LogoCisco.height} src={LogoCisco} width={LogoCisco.width} />
+                                <LazyLoadImage alt="HTML" height={LogoPacket.height} src={LogoPacket} width={LogoPacket.width} />
+                                <LazyLoadImage alt="LogoPython" height={LogoPython.height} src={LogoPython} width={LogoPython.width} />
                             </div>
                         </Carousel.Item>
                     </Carousel>            

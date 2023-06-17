@@ -9,6 +9,17 @@
     "Conne":"Let's connect"
 },
 "banner":{
-    
+    "tag":"Hi, my name is Mathieu",
+    "je":"I am a: ",
+    "list":["Web Designer", "UI/UX Designer", "Network Technician"],
+    "Presentation":"I am currently studying computer science at Laval University. I have always been interested in technological fields which earned me a college diploma in electrical engineering / telecommunications and networks. I hope to continue my journey in the field with several interesting projects."
+},
+"Skills":{
+    "title":"Skills",
+    "s1":" ",
+    "s2":"",
+    "s3":"",
+    "s4":""
 }
+
 }

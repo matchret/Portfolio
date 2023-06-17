@@ -16,6 +16,10 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [toggled, setToggled] = useState(false);
+
+
+
 
 
   useEffect(() => {
@@ -36,14 +40,20 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const togglePress = () => {
+    if (toggled==false) {
+      setToggled(true);
+    } else {
+      setToggled(false);
+    }
+  }
 
-  
 
   return (
-      <Navbar expand="lg" className={scrolled ? "scrolled" : ""} variant="dark" >
+      <Navbar expand="lg" className={scrolled || toggled ? "scrolled" : ""} variant="dark" >
         <Container>
             <AnimationNav  />
-          <Navbar.Toggle />
+          <Navbar.Toggle onClick={() => togglePress()}/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#banner" className={activeLink === 'banner' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('banner')}>{t("Navbar.Ho")}</Nav.Link>
