@@ -1,7 +1,6 @@
 
 import { useState, useEffect} from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import AnimationNav from "./Animation/AnimationNav";
 import navIcon1 from '../assets/icon-linkedin.svg';
 import navIcon3 from '../assets/icon-instagram.svg';
 import navIcon4 from '../assets/github-mark.svg';
