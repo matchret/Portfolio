@@ -6,6 +6,7 @@ import navIcon1 from '../assets/icon-linkedin.svg';
 import navIcon3 from '../assets/icon-instagram.svg';
 import navIcon4 from '../assets/github-mark.svg';
 import { useTranslation } from "react-i18next";
+import animNav from "../assets/Animation/nav.gif"
 
 
 export const NavBar = () => {
@@ -52,7 +53,7 @@ export const NavBar = () => {
   return (
       <Navbar expand="lg" className={scrolled || toggled ? "scrolled" : ""} variant="dark" >
         <Container>
-            <AnimationNav  />
+            <img src={animNav} />
           <Navbar.Toggle onClick={() => togglePress()}/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

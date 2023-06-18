@@ -2,7 +2,9 @@ import React from 'react';
 import {useLottie} from "lottie-react";
 import animationData from "../../assets/Animation/animatioLogo.json";
 
+
 const AnimationNav = () => {
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
