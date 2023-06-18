@@ -97,15 +97,15 @@ export const Skills = ()=>{
                 <ul>
                     <li><a href="https://isocpp.org/" target='_blank'>C++</a></li>
                     <li><a href="https://isocpp.org/" target='_blank'>C</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>Python</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>React</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>HTML</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>CSS</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>JavaScript</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>Cisco</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>Packet Tracer</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>Nodejs</a></li>
-                    <li><a href="https://isocpp.org/" target='_blank'>k</a></li>
+                    <li><a href="https://www.python.org/" target='_blank'>Python</a></li>
+                    <li><a href="https://reactjs.org/" target='_blank'>React</a></li>
+                    <li><a href="https://html.spec.whatwg.org/multipage/" target='_blank'>HTML</a></li>
+                    <li><a href="https://www.w3.org/TR/CSS/#css" target='_blank'>CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JavaScript</a></li>
+                    <li><a href="https://www.cisco.com/" target='_blank'>Cisco</a></li>
+                    <li><a href="https://www.netacad.com/courses/packet-tracer" target='_blank'>Packet Tracer</a></li>
+                    <li><a href="https://nodejs.org/" target='_blank'>Node.js</a></li>
+                    <li><a href="https://git-scm.com/" target='_blank'>Git</a></li>
                 </ul>
                 </Row>
         </section>
