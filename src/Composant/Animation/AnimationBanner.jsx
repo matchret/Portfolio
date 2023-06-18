@@ -6,7 +6,7 @@ const AnimationBanner = () => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: animationData,
+        animationData: JSON.parse(JSON.stringify(animationData)),
         renderer: 'svg',
         height:""
         

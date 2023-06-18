@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #4b4bbc !important;
+  background-color: #071321 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -141,7 +141,6 @@ span.navbar-text {
   z-index: 1;
 }
 .navbar-text button::before {
-  content: "";
   width: 0%;
   height: 100%;
   position: absolute;
@@ -211,12 +210,14 @@ span.navbar-text {
 /************Banner********************/
 .banner {
   margin-top: 0;
-  padding: 15vh 0 100px 0;
+  padding: 15vh 0 200px 0;
   background-image: url(./assets/nasa.jpg);
+  background-color: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  transition: background 300ms ease-in 200ms;
   background-position: top center;
   background-size:cover;
   background-repeat: no-repeat;
-  border-radius: 0 0 50px 50px;
+  
 }
 .banner .tagline {
   font-weight: 700;
@@ -238,7 +239,7 @@ span.navbar-text {
   min-height: 130px;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #dddddd;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -266,7 +267,8 @@ span.navbar-text {
 }
 
 .banner button:hover {
-  color: #121212;
+  color: #000000;
+  border: 1px solid #000000;
 }
 .banner button::before{
   content: "";
@@ -335,12 +337,16 @@ span.navbar-text {
 }
 
 /************  Skills   *************/
+.skill-fade{
+  background: linear-gradient(0deg, rgba(7,19,33,1) 97%, rgba(18,18,18,0) 100%);
+}
+
 .skill{
   background-color: #121212;
   border-radius: 64px;
   width: 100%;
   text-align: center;
-  margin-top: -60px;
+  margin-top: -150px;
 
 }
 
@@ -353,6 +359,11 @@ img.d-block {
   margin-left: 38%;
   margin-bottom: 7vw ;
   width: 25%;
+  min-height: 30vw;
+}
+.lazy-load-image-background.blur{
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-caption{
@@ -367,16 +378,26 @@ img.d-block {
   justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 
 }
 
 .carousel .framework img{
-  width: 15%;
+  width: 80%;
   aspect-ratio: 3/2;
   object-fit: contain;
+  align-self: center;
 }
 
+.skill ul{
+  padding: 10px 20% 30px 20%;
+  columns: 3;
+  list-style:none;
+}
+
+.skill li{
+  margin: 5px 5px 5px 5px;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -384,6 +405,12 @@ img.d-block {
     margin-bottom: 10vw ;
     margin-left: 35%;
     width: 30%;
+  }
+  .carousel .framework{
+    height: 120px;
+  }
+  .carousel .framework img{
+    width: 100%;
   }
 }
 
@@ -395,9 +422,7 @@ img.d-block {
   }
   .carousel .framework{
     height: 100px;
-
   }
-  
 }
 
 @media screen and (max-width: 530px) {
@@ -405,9 +430,6 @@ img.d-block {
     margin-bottom: 22vw ;
   }
 
-  .carousel .framework img{
- 
-  }
 }
 
 

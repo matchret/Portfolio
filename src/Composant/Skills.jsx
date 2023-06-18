@@ -19,6 +19,7 @@ import LogoPacket from '../assets/Image/Technology/packet-Tracer.png';
 export const Skills = ()=>{
 
     return (
+    <section className='skill-fade'>
         <Container>  
         <section className='skill' id='skills'>       
             <Row> 
@@ -30,37 +31,37 @@ export const Skills = ()=>{
                 <Row>
                     <Carousel slide="true">
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="First slide"  src={Meter1}/>
+                        <LazyLoadImage className="d-block" alt="First slide"  src={Meter1} effect="blur" />
                             <Carousel.Caption>
                                 <h4>First slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="2 slide" src={Meter2} />
+                        <LazyLoadImage className="d-block" alt="2 slide" src={Meter2} effect="blur" />
                             <Carousel.Caption>
                             <h4>Second slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter3} />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter3}  effect="blur" />
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width}/>
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur"/>
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width} />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur" />
                             <Carousel.Caption>
                                 <h4>Third slide label</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" height={Meter2.height} src={Meter2} width={Meter2.width}/>
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur" />
                             <Carousel.Caption>
                                 <h3>Third slide label</h3>
                             </Carousel.Caption>
@@ -74,26 +75,42 @@ export const Skills = ()=>{
                     <Carousel slide="true">
                         <Carousel.Item>
                             <div className='framework'>
-                                <LazyLoadImage alt="React" height={LogoReact.height} src={LogoReact} width={LogoReact.width}  />
-                                <LazyLoadImage alt="HTML" height={LogoHTML.height} src={LogoHTML} width={LogoHTML.width}  />
-                                <LazyLoadImage alt="CSS" height={LogoCss.height} src={LogoCss} width={LogoCss.width}  />
-                                <LazyLoadImage alt="HTML" height={LogoNodeJS.height} src={LogoNodeJS} width={LogoNodeJS.width}  />
-                                <LazyLoadImage alt="Python" height={LogoPython.height} src={LogoPython} width={LogoPython.width}/>
+                                <LazyLoadImage alt="React"  src={LogoReact} effect="blur" />
+                                <LazyLoadImage alt="HTML" src={LogoHTML} effect="blur" />
+                                <LazyLoadImage alt="CSS" src={LogoCss} effect="blur"  />
+                                <LazyLoadImage alt="HTML"  src={LogoNodeJS}  effect="blur"/>
+                                <LazyLoadImage alt="Python" src={LogoPython} effect="blur" />
                             </div>                        
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className='framework'>
-                                <LazyLoadImage alt="C++" height={LogoCPlus.height} src={LogoCPlus} width={LogoCPlus.width} />
-                                <LazyLoadImage alt="C" height={LogoC.height} src={LogoC} width={LogoC.width} />
-                                <LazyLoadImage alt="Cisco" height={LogoCisco.height} src={LogoCisco} width={LogoCisco.width} />
-                                <LazyLoadImage alt="HTML" height={LogoPacket.height} src={LogoPacket} width={LogoPacket.width} />
-                                <LazyLoadImage alt="LogoPython" height={LogoPython.height} src={LogoPython} width={LogoPython.width} />
+                                <LazyLoadImage alt="C++" src={LogoCPlus} effect="blur"/>
+                                <LazyLoadImage alt="C" src={LogoC}  effect="blur"/>
+                                <LazyLoadImage alt="Cisco" src={LogoCisco}  effect="blur"/>
+                                <LazyLoadImage alt="HTML" src={LogoPacket}  effect="blur"/>
+                                <LazyLoadImage alt="LogoPython" src={LogoPython} effect="blur"/>
                             </div>
                         </Carousel.Item>
                     </Carousel>            
                 </Row>
+                <Row>
+                <ul>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Cisco</li>
+                    <li>Packet Tracer</li>
+                    <li>Nodejs</li>
+                    <li>k</li>
+                </ul>
+                </Row>
         </section>
         </Container>
+        </section>
     );
 
 }
