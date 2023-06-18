@@ -6,7 +6,7 @@ const AnimationNav = () => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: JSON.parse(JSON.stringify(animationData)),
+        animationData: animationData,
         renderer: 'svg',
         height:""
         

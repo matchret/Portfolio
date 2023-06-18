@@ -1,8 +1,8 @@
 import React from 'react';
 import {useLottie} from "lottie-react";
-import animationData from "../../assets/Animation/animationBanner.json";
+import animationData from "../../assets/Animation/Contact.json";
 
-const AnimationBanner = () => {
+const AnimationContact = () => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -17,4 +17,4 @@ const AnimationBanner = () => {
     return <div className='animation-banner'>{View}</div>;
   };
 
-export default AnimationBanner;
+export default AnimationContact;

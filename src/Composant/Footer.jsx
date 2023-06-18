@@ -5,7 +5,6 @@ import navIcon1 from '../assets/icon-linkedin.svg';
 import navIcon2 from '../assets/icon-facebook.svg';
 import navIcon3 from '../assets/icon-instagram.svg';
 import navIcon4 from '../assets/github-mark.svg';
-import useOnScreen from "./Animation/useVisible";
 
 export const Footer = () => {
 
