@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import AnimationNav from "./Animation/AnimationNav";
 import navIcon1 from '../assets/icon-linkedin.svg';
 import navIcon2 from '../assets/icon-facebook.svg';
 import navIcon3 from '../assets/icon-instagram.svg';
 import navIcon4 from '../assets/github-mark.svg';
-import animNav from "../assets/Animation/nav.gif";
+import animNav from "../assets/output.gif";
 
 export const Footer = () => {
 
@@ -14,7 +13,7 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
-          <img src={animNav} />
+          <img className='animation-nav' src={animNav} />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon-foot">

@@ -95,17 +95,17 @@ export const Skills = ()=>{
                 </Row>
                 <Row>
                 <ul>
-                    <li>C++</li>
-                    <li>C</li>
-                    <li>Python</li>
-                    <li>React</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Cisco</li>
-                    <li>Packet Tracer</li>
-                    <li>Nodejs</li>
-                    <li>k</li>
+                    <li><a href="https://isocpp.org/" target='_blank'>C++</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>C</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>Python</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>React</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>HTML</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>CSS</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>JavaScript</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>Cisco</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>Packet Tracer</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>Nodejs</a></li>
+                    <li><a href="https://isocpp.org/" target='_blank'>k</a></li>
                 </ul>
                 </Row>
         </section>

@@ -57,6 +57,7 @@ nav.navbar.scrolled {
 
 .animation-nav {
     pointer-events: none;
+    height: 100px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
