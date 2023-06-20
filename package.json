@@ -18,8 +18,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-i18next": "^12.3.1",
-    "react-lazy-load-image-component": "^1.6.0",
-    "uuid": "^6.12.1"
+    "react-lazy-load-image-component": "^1.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
