@@ -1,47 +1,40 @@
-import { useState, useRef } from "react";
+import { ButtonGroup,
+	Button,
+	Flex,
+	View,
+	useTheme,
+	TextField,
+	TextAreaField,
+	FieldGroupIcon,
+	Icon,
+	Link } from "@aws-amplify/ui-react";
+import { API } from "aws-amplify";
+import {createEmailMeassage} from '../graphql/mutations'
 import { Col, Container, Row } from "react-bootstrap";
 import AnimationContact from "./Animation/AnimationContact";
 
+//Backend Send Email tuto
+//https://dev.to/mtliendo/serverless-contact-form-using-aws-amplify-1e9m
 export const ContactForm = () => {
-    const formInitialDetails = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-      }
-      const [formDetails, setFormDetails] = useState(formInitialDetails);
-      const [buttonText, setButtonText] = useState('Send');
-      const [status, setStatus] = useState({});
-    
-      const onFormUpdate = (category, value) => {
-          setFormDetails({
-            ...formDetails,
-            [category]: value
-          })
-      }
+	const { tokens } = useTheme()
 
+const handleFormSubmit = async(e) => {
+    ce.preventDefault()
+		const name = e.target.name.value
+		const email = e.target.email.value
+		const message = e.target.message.value
 
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText("Sending...");
-        let response = await fetch("http://localhost:5173/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(formDetails),
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code == 200) {
-          setStatus({ succes: true, message: 'Message sent successfully'});
-        } else {
-          setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        }
-      };
-
+		await API.graphql({
+			query: createEmailMeassage,
+			variables: {
+				input: {
+					name,
+					email,
+					message,
+				},
+			},
+		})
+}
 
     return (
     <section className="form-box" id="connect">
@@ -52,32 +45,42 @@ export const ContactForm = () => {
         </Col>
         <Col>
             <h2>in Touch</h2>
-            <form onSubmit={handleSubmit}>
-                <Row>
-                    <Col size={12} sm={6}>
-                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6}>
-                    <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
-                    </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
-                </Row>
-            </form>
+            <Flex as="form" direction={'column'} onSubmit={handleFormSubmit}>
+							<TextField
+								required
+								label="Your Name"
+								name="name"
+								placeholder="Focus Otter"
+								innerStartComponent={
+									<FieldGroupIcon ariaLabel="">
+										{/** Accessibility tip: pass empty ariaLabel for decorative icons. */}
+									</FieldGroupIcon>
+								}
+							/>
+							<TextField
+								label="Email"
+								name="email"
+								placeholder="you@email.com"
+								type={'email'}
+								required
+								innerStartComponent={
+									<FieldGroupIcon ariaLabel="">
+										{/** Accessibility tip: pass empty ariaLabel for decorative icons. */}
+									</FieldGroupIcon>
+								}
+							/>
+							<TextAreaField
+								required
+								label="Message"
+								name="message"
+								placeholder="Enter your message"
+							/>
+							<View style={{ marginTop: tokens.space.medium }}>
+								<Button type="submit" variation="primary">
+									Send Message
+								</Button>
+							</View>
+						</Flex>
         </Col>
         </Row>
     </Container>

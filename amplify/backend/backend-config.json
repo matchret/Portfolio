@@ -1,0 +1,63 @@
+{
+  "api": {
+    "portfolio": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "portfoliob6e57b6c": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "portfolio"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_portfoliob6e57b6c_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "portfoliob6e57b6c"
+        }
+      ]
+    },
+    "AMPLIFY_function_portfoliob6e57b6c_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "portfoliob6e57b6c"
+        }
+      ]
+    },
+    "AMPLIFY_function_portfoliob6e57b6c_sesEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "portfoliob6e57b6c"
+        }
+      ]
+    }
+  }
+}
