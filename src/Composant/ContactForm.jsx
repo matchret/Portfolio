@@ -5,16 +5,15 @@ import { ButtonGroup,
 	useTheme,
 	TextField,
 	TextAreaField,
-	FieldGroupIcon,
-	Icon,
-	Link } from "@aws-amplify/ui-react";
+	FieldGroupIcon } from "@aws-amplify/ui-react";
 import { API } from "aws-amplify";
-import {createEmailMeassage} from '../graphql/mutations'
+import {createEmailMeassage} from "../graphql/mutations";
 import { Col, Container, Row } from "react-bootstrap";
 import AnimationContact from "./Animation/AnimationContact";
 
 //Backend Send Email tuto
 //https://dev.to/mtliendo/serverless-contact-form-using-aws-amplify-1e9m
+
 export const ContactForm = () => {
 	const { tokens } = useTheme()
 
@@ -45,17 +44,12 @@ const handleFormSubmit = async(e) => {
         </Col>
         <Col>
             <h2>in Touch</h2>
-            <Flex as="form" direction={'column'} onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit}>
 							<TextField
 								required
 								label="Your Name"
 								name="name"
 								placeholder="Focus Otter"
-								innerStartComponent={
-									<FieldGroupIcon ariaLabel="">
-										{/** Accessibility tip: pass empty ariaLabel for decorative icons. */}
-									</FieldGroupIcon>
-								}
 							/>
 							<TextField
 								label="Email"
@@ -63,11 +57,7 @@ const handleFormSubmit = async(e) => {
 								placeholder="you@email.com"
 								type={'email'}
 								required
-								innerStartComponent={
-									<FieldGroupIcon ariaLabel="">
-										{/** Accessibility tip: pass empty ariaLabel for decorative icons. */}
-									</FieldGroupIcon>
-								}
+
 							/>
 							<TextAreaField
 								required
@@ -80,7 +70,7 @@ const handleFormSubmit = async(e) => {
 									Send Message
 								</Button>
 							</View>
-						</Flex>
+						</form>
         </Col>
         </Row>
     </Container>
