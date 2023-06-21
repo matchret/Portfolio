@@ -4,7 +4,7 @@ import { useTranslation} from "react-i18next";
 
 
 function TexteBanner() { 
-  const [ t ] = useTranslation('global');
+  const [ t ] = useTranslation('translation');
 
     /*********Code pour changement de mots*************/
     const [loopNum, setLoopNum] = useState(0);

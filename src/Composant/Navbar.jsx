@@ -9,7 +9,7 @@ import animNav from "../assets/output.gif";
 
 
 export const NavBar = () => {
-  const [t, i18n]= useTranslation('global');  //Translation i18next
+  const [t, i18n]= useTranslation('translation');  //Translation i18next
   const HandleChangeLanguage = (lang) =>{
     i18n.changeLanguage(lang);
   }

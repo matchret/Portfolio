@@ -6,7 +6,7 @@ import TexteBanner from '../Composant/Animation/TexteBanner';
 import { useTranslation } from "react-i18next";
 
 export const Banner = () => {
-    const [t]= useTranslation('global');  //Translation i18next
+    const [t]= useTranslation('translation');  //Translation i18next
 
     return (
         <section className="banner" id="banner">
