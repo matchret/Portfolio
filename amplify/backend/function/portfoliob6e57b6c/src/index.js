@@ -9,6 +9,8 @@ Amplify Params - DO NOT EDIT */
  */
 
 const aws = require('aws-sdk')
+const nodemailer = require('nodemailer')
+
 const ses = new aws.SES()
 
 exports.handler = async(event) => {

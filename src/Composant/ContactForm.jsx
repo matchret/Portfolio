@@ -1,12 +1,10 @@
-import { ButtonGroup,
+import {
 	Button,
-	Flex,
 	View,
 	useTheme,
 	TextField,
-	TextAreaField,
-	FieldGroupIcon } from "@aws-amplify/ui-react";
-import { API } from "aws-amplify";
+	TextAreaField } from "@aws-amplify/ui-react";
+import { API, graphqlOperation } from "aws-amplify";
 import {createEmailMeassage} from "../graphql/mutations";
 import { Col, Container, Row } from "react-bootstrap";
 import AnimationContact from "./Animation/AnimationContact";
@@ -23,27 +21,26 @@ const handleFormSubmit = async(e) => {
 		const email = e.target.email.value
 		const message = e.target.message.value
 
-		await API.graphql({
-			query: createEmailMeassage,
-			variables: {
-				input: {
-					name,
-					email,
-					message,
-				},
-			},
-		})
-}
+		await API.graphql(graphqlOperation(createEmailMeassage, {input:{
+			name,
+			email,
+			message,
+		}}));
+	}
+
 
     return (
     <section className="form-box" id="connect">
     <Container>
         <Row>
-        <Col className="animation" size={12}>
-            <AnimationContact />
+        <Col size={12}>
+			<h2>in Touch</h2>
+			<div className="animation">
+            	<AnimationContact />
+			</div>
         </Col>
         <Col>
-            <h2>in Touch</h2>
+            <h3>Form</h3>
             <form onSubmit={handleFormSubmit}>
 							<TextField
 								required

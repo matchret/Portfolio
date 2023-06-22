@@ -16,7 +16,7 @@
         "portfoliob6e57b6c": {
           "sesEmail": "mathieuchretien1@gmail.com",
           "deploymentBucketName": "amplify-portfolio-dev-132259-deployment",
-          "s3Key": "amplify-builds/portfoliob6e57b6c-49524f76624438625a61-build.zip"
+          "s3Key": "amplify-builds/portfoliob6e57b6c-31754e4c6d4164734d65-build.zip"
         }
       },
       "api": {

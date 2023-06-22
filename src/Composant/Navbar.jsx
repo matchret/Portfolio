@@ -6,6 +6,7 @@ import navIcon3 from '../assets/icon-instagram.svg';
 import navIcon4 from '../assets/github-mark.svg';
 import { useTranslation } from "react-i18next";
 import animNav from "../assets/output.gif";
+import { Link } from "@aws-amplify/ui-react";
 
 
 export const NavBar = () => {
@@ -70,7 +71,7 @@ export const NavBar = () => {
                 <a href="" target="_blank"><img src={navIcon4} alt="Icon" /></a>
                 <a href="https://www.instagram.com/matchret/" target="_blank"><img src={navIcon3} alt="Icon" /></a>
               </div>
-                  <button className="vvd"><span>{t("Navbar.Conne")}</span></button>
+                  <a role="button" onClick={()=> location.href='#connect'} className="vvd">{t("Navbar.Conne")}</a>
             </span>
           </Navbar.Collapse>
         </Container>

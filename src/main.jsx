@@ -9,10 +9,10 @@ import global_en from '../src/assets/Translation/En/translation.json';
 import global_fr from '../src/assets/Translation/Fr/translation.json';
 
 import { AmplifyProvider } from '@aws-amplify/ui-react';
-import config from './aws-exports.js';
+import awsconfig from './aws-exports.js';
 import { Amplify } from 'aws-amplify';
 
-Amplify.configure(config)
+Amplify.configure(awsconfig)
 
 i18next
 .use(initReactI18next)
