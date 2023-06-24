@@ -16,7 +16,7 @@ export const ContactForm = () => {
 	const { tokens } = useTheme()
 
 const handleFormSubmit = async(e) => {
-    ce.preventDefault()
+    e.preventDefault()
 		const name = e.target.name.value
 		const email = e.target.email.value
 		const message = e.target.message.value
@@ -46,7 +46,7 @@ const handleFormSubmit = async(e) => {
 								required
 								label="Your Name"
 								name="name"
-								placeholder="Focus Otter"
+								placeholder="First Last"
 							/>
 							<TextField
 								label="Email"

@@ -1,6 +1,7 @@
 import { NavBar } from './Composant/Navbar';
 import { Banner } from './Composant/Banner'
 import { Skills } from './Composant/Skills';
+import { Project } from './Composant/Projects';
 import { ContactForm } from './Composant/ContactForm'
 import { Footer } from './Composant/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,6 +15,7 @@ function App() {
         <NavBar />
         <Banner />
         <Skills />
+        <Project />
         <ContactForm />
         <Footer />
     </>
