@@ -9,8 +9,9 @@ import {createEmailMeassage} from "../graphql/mutations";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense } from "react";
+import AnimationContact from './Animation/AnimationContact';
 
-const AnimationContact = lazy(() => import('./Animation/AnimationContact'));
+//const AnimationContact = lazy(() => import('./Animation/AnimationContact'));
 
 //Backend Send Email tuto
 //https://dev.to/mtliendo/serverless-contact-form-using-aws-amplify-1e9m
@@ -39,9 +40,7 @@ const handleFormSubmit = async(e) => {
         <Row>
         <Col size={12}>
 			<h2>{t("Form.title")}</h2>
-			<Suspense fallback={<div> Loading ... </div>}>
             <AnimationContact />
-			</Suspense>
 			<a>Curilum Vitea</a>
         </Col>
         <Col>
