@@ -14,7 +14,7 @@ const AnimationContact = () => {
   
     const { View } = useLottie(defaultOptions);
   
-    return <div className='animation-banner'>{View}</div>;
+    return <div className='animation-form'>{View}</div>;
   };
 
 export default AnimationContact;

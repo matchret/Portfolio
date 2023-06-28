@@ -14,9 +14,11 @@ import LogoHTML from '../assets/Image/Technology/HTML5_logo.png';
 import LogoCss from '../assets/Image/Technology/CSS3_logo.png';
 import LogoCisco from '../assets/Image/Technology/logo-cisco.png';
 import LogoPacket from '../assets/Image/Technology/packet-Tracer.png';
+import { useTranslation } from 'react-i18next';
 
 
 export const Skills = ()=>{
+    const [t]= useTranslation('translation');  //Translation i18next
 
     return (
     <section className='skill-fade'>
@@ -24,8 +26,8 @@ export const Skills = ()=>{
         <section className='skill' id='skills'>       
             <Row> 
                 <div className='skill-box'>
-                    <h2>Skills</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quos, laudantium, dolore autem laboriosam ducimus quam id praesentium unde soluta error corrupti ipsum possimus veritatis, omnis perferendis dolorem dolor nihil?</p>
+                    <h2>{t("Skills.title")}</h2>
+                    <p>{t("Skills.text")}</p>
                 </ div>
             </ Row>
                 <Row>
@@ -33,43 +35,37 @@ export const Skills = ()=>{
                         <Carousel.Item>
                         <LazyLoadImage className="d-block" alt="First slide"  src={Meter1} effect="blur" />
                             <Carousel.Caption>
-                                <h4>First slide label</h4>
+                                <h4>{t("Skills.s1")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <LazyLoadImage className="d-block" alt="2 slide" src={Meter2} effect="blur" />
                             <Carousel.Caption>
-                            <h4>Second slide label</h4>
+                            <h4>{t("Skills.s2")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <LazyLoadImage className="d-block" alt="Third slide" src={Meter3}  effect="blur" />
                             <Carousel.Caption>
-                                <h4>Third slide label</h4>
+                                <h4>{t("Skills.s3")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur"/>
                             <Carousel.Caption>
-                                <h4>Third slide label</h4>
+                                <h4>{t("Skills.s4")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur" />
                             <Carousel.Caption>
-                                <h4>Third slide label</h4>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur" />
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
+                                <h4>{t("Skills.s5")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>            
                 </Row>
                 <Row>      
-                    <h3>Used technology</h3>
+                    <h3>{t("Skills.tech")}</h3>
                 </Row>
                 <Row>
                     <Carousel slide="true">

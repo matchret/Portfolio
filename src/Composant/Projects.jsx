@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Telemetrie from "../assets/Projects/Shema.png"
 import portfolio from '../assets/Projects/Portfolio.png'
+import ReseauAerien from '../assets/Projects/ReseauAerien.png'
 
 
 export const Project = () => {
@@ -10,16 +11,19 @@ export const Project = () => {
     return (
         <section className="project" id="projects">
             <Container>
-                <h2>Projects</h2>
+                <h2>{t("Projects.title")}</h2>
+                <p>{t("Projects.text")}</p>
                 <Row>
                 <div className="card">
                     <div className="image">
-                        <img src={portfolio}/>
+                        
+                        <img src={portfolio} alt='…' loading= 'lazy' />
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h3>Someone famous</h3>
+                            <h3>{t("Projects.portfolio.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <a>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
@@ -27,12 +31,13 @@ export const Project = () => {
                 <Row>
                 <div className="card" role="">
                     <div className="image">
-                        <img src="http://1.bp.blogspot.com/-EhPr4LXcywE/Udr594sPHTI/AAAAAAAAAJ4/Tv4y4CBLTPM/s400/Cristina-Otero-2.jpg"/>
+                        <img src={ReseauAerien} alt='…' loading= 'lazy'/>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h3>Someone famous</h3>
+                            <h3>{t("Projects.algo.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <a>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
@@ -40,12 +45,13 @@ export const Project = () => {
                 <Row>
                 <div className="card" role="telemetrie">
                     <div className="image">
-                        <img src={Telemetrie}/>
+                        <img src={Telemetrie} alt='…' loading= 'lazy'/>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h3>Someone famous</h3>
+                            <h3>{t("Projects.ESP.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <a>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
