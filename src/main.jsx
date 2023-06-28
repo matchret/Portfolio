@@ -7,7 +7,6 @@ import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import global_en from '../src/assets/Translation/En/translation.json';
 import global_fr from '../src/assets/Translation/Fr/translation.json';
-
 import { AmplifyProvider } from '@aws-amplify/ui-react';
 import awsconfig from './aws-exports.js';
 import { Amplify } from 'aws-amplify';

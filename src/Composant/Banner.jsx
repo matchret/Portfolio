@@ -1,9 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import PhotoProfile from "../assets/blank-profile-picture.webp";
 import  ArrowRightCircle  from '../assets/arrow-right-circle.svg';
-import AnimationBanner from "./Animation/AnimationBanner";
+//import AnimationBanner from "./Animation/AnimationBanner";
 import TexteBanner from '../Composant/Animation/TexteBanner';
 import { useTranslation } from "react-i18next";
+import { lazy, Suspense } from "react";
+
+const AnimationBanner = lazy(() => import('./Animation/AnimationBanner'));
 
 export const Banner = () => {
     const [t]= useTranslation('translation');  //Translation i18next
@@ -23,7 +26,9 @@ export const Banner = () => {
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                         <div className="animation-banner">
+                            <Suspense fallback={<div>Loading ...</div>}>
                             <AnimationBanner />
+                            </Suspense>
                         </ div >
                     </Col>
                 </Row>
