@@ -45,7 +45,7 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 9998;
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
@@ -132,7 +132,7 @@ span.navbar-text {
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
+
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -416,18 +416,17 @@ img.d-block {
   border-radius: 2px;
   transition: background-size 350ms;
   --bg-h: 100%;
-  text-decoration: none;
   color: inherit;
   line-height: 1;
   --bg-h: 4px;
   padding-bottom: 2px;
   font-weight:800;
-    font-size: large;
+  font-size: large;
 }
 
 .skill li>a:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
-  background-position-x: left;   
+  background-position-x: left; 
   }
 
 @media screen and (max-width: 1200px) {
@@ -580,21 +579,38 @@ img.d-block {
 .form-box{
   background-color: #dddddd;
   border-radius: 25px 25px 0 0;
-  padding-bottom:50px ;
+  padding-bottom:25px ;
+  padding-top: 15px;
+  text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 2px #000;
+  -webkit-text-shadow: 0 0 2px #000;
 }
 
-.form-box h2{
+.form-box section{
   text-align: center;
 }
+
+.form-box a{
+  background: linear-gradient(90deg, rgba(89,48,179,1) 10%, rgba(161,54,131,1) 90%) no-repeat right bottom / 0 var(--bg-h);
+  border-radius: 4px;
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  line-height: 1;
+  --bg-h: 6px;
+  padding-bottom: 4px;
+  font-size: large;
+  cursor: pointer;
+}
+.form-box a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+
+  background-position-x: left;   
+  }
+
 .animation-form{
   width: 50%;
   margin: auto;
   display: block;
-}
-
-.form-box.col a{
-  text-align: center;
-  width: 100%;
 }
 
 .amplify-flex.amplify-field.amplify-textareafield{
@@ -620,6 +636,7 @@ img.d-block {
 /************ Footer Css ************/
 .footer {
   background-color: #121212;
+  text-align: center;
 
 }
 .footer p {
@@ -668,4 +685,26 @@ transition: 0.3s ease-in-out;
 }
 .social-icon-foot a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+/******* POP-UP **********/
+
+.overlay{
+  position:fixed;
+  background-color: black;
+  z-index: 9999;
+  top:0;
+  left:0;
+  margin: 50px;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  box-sizing: border-box;
+  border-radius:25px ;
+  padding: 15px;
+}
+
+.overlay .closeBtn{
+  text-align: end;
+  cursor: pointer;
 }

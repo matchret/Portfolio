@@ -8,8 +8,9 @@ import { API, graphqlOperation } from "aws-amplify";
 import {createEmailMeassage} from "../graphql/mutations";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import AnimationContact from './Animation/AnimationContact';
+import Coming from "./Pop-up/coming";
 
 //const AnimationContact = lazy(() => import('./Animation/AnimationContact'));
 
@@ -18,7 +19,8 @@ import AnimationContact from './Animation/AnimationContact';
 
 export const ContactForm = () => {
 	const [t]= useTranslation('translation');  //Translation i18next
-	const { tokens } = useTheme()
+	const { tokens } = useTheme()			   //Form
+	const [OpenCV, setOpenCV] = useState(false)
 
 const handleFormSubmit = async(e) => {
     e.preventDefault()                             //IMPORTANT EMPECHE FONCTION DEFAULT
@@ -39,9 +41,12 @@ const handleFormSubmit = async(e) => {
     <Container>
         <Row>
         <Col size={12}>
+		<section>
 			<h2>{t("Form.title")}</h2>
             <AnimationContact />
-			<a>Curilum Vitea</a>
+			<a onClick={()=> setOpenCV(true)}>Curriculum Vitae</a>
+			<Coming open={OpenCV} onClose={()=> setOpenCV(false)}/>
+		</section>
         </Col>
         <Col>
             <h3>{t("Form.form")}</h3>

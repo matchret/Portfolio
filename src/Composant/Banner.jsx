@@ -26,9 +26,7 @@ export const Banner = () => {
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                         <div className="animation-banner">
-                            <Suspense fallback={<div>Loading ...</div>}>
                             <AnimationBanner />
-                            </Suspense>
                         </ div >
                     </Col>
                 </Row>

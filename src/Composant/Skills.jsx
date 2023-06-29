@@ -97,11 +97,13 @@ export const Skills = ()=>{
                     <li><a href="https://reactjs.org/" target='_blank'>React</a></li>
                     <li><a href="https://html.spec.whatwg.org/multipage/" target='_blank'>HTML</a></li>
                     <li><a href="https://www.w3.org/TR/CSS/#css" target='_blank'>CSS</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JavaScript</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>Java Script</a></li>
                     <li><a href="https://www.cisco.com/" target='_blank'>Cisco</a></li>
                     <li><a href="https://www.netacad.com/courses/packet-tracer" target='_blank'>Packet Tracer</a></li>
                     <li><a href="https://nodejs.org/" target='_blank'>Node.js</a></li>
                     <li><a href="https://git-scm.com/" target='_blank'>Git</a></li>
+                    <li><a href="https://graphql.org/" target='_blank'>Graphql</a></li>
+                    <li><a href="https://aws.amazon.com/" target='_blank'>AWS</a></li>
                 </ul>
                 </Row>
         </section>
