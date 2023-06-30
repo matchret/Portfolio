@@ -10,7 +10,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense, useState } from "react";
 import AnimationContact from './Animation/AnimationContact';
-import Coming from "./Pop-up/coming";
+import Coming from "./Pop-up/Coming";
 
 //const AnimationContact = lazy(() => import('./Animation/AnimationContact'));
 

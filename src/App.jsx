@@ -23,7 +23,6 @@ function App() {
         <Project />
         <ContactForm />
         <Footer />
-
     </>
   )
 }
