@@ -533,20 +533,37 @@ img.d-block {
   width: 100%;
   max-height: 90%;
 }
-.card .details .center h3 {
+.card .details .center h3{
   margin: 0;
   padding: 0;
-  color: #ff3636;
+  color: blue;
   line-height: 20px;
   font-size: 20px;
   text-transform: uppercase;
 }
-.card .details .center p {
+.card .details .center p{
   margin: 10px 0;
   padding: 0;
   color: #262626;
   text-overflow: ellipsis;
 }
+
+.card .details .center a{
+background: linear-gradient(90deg, rgba(89,48,179,1) 10%, rgba(161,54,131,1) 90%) no-repeat right bottom / 0 var(--bg-h);
+  border-radius: 2px;
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  line-height: 1;
+  --bg-h: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  
+}
+
+.card .details .center a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;   
+  }
 
 .card[role="telemetrie"] .details {
   background: #121212;
@@ -601,7 +618,6 @@ img.d-block {
 }
 .form-box a:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
-
   background-position-x: left;   
   }
 
@@ -662,6 +678,7 @@ img.d-block {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 .social-icon-foot a::before {
   content: "";

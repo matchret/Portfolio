@@ -1,12 +1,18 @@
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Telemetrie from "../assets/Projects/Shema.png"
 import portfolio from '../assets/Projects/Portfolio.png'
 import ReseauAerien from '../assets/Projects/ReseauAerien.png'
+import Coming from "./Pop-up/coming";
 
 
 export const Project = () => {
     const [t]= useTranslation('translation');  //Translation i18next
+
+    const [Open1, setOpen1] = useState(false) //
+    const [Open2, setOpen2] = useState(false)
+    const [Open3, setOpen3] = useState(false)
 
     return (
         <section className="project" id="projects">
@@ -23,7 +29,7 @@ export const Project = () => {
                         <div className="center">
                             <h3>{t("Projects.portfolio.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
-                            <a>{t("Projects.more")}</a>
+                            <a onClick={()=> setOpen3(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +43,7 @@ export const Project = () => {
                         <div className="center">
                             <h3>{t("Projects.algo.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
-                            <a>{t("Projects.more")}</a>
+                            <a onClick={()=> setOpen2(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
@@ -51,12 +57,16 @@ export const Project = () => {
                         <div className="center">
                             <h3>{t("Projects.ESP.title")}</h3>
                             <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
-                            <a>{t("Projects.more")}</a>
+                            <a onClick={()=> setOpen1(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
                 </Row>  
             </Container>
+            <Coming open={Open3} onClose={()=> setOpen3(false)}/>
+            <Coming open={Open2} onClose={()=> setOpen2(false)}/>
+            <Coming open={Open1} onClose={()=> setOpen1(false)}/>
         </section>
+        
     )
 }

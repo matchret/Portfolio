@@ -1,12 +1,13 @@
 
 import { useState, useEffect} from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import navIcon1 from '../assets/icon-linkedin.svg';
-import navIcon3 from '../assets/icon-instagram.svg';
-import navIcon4 from '../assets/github-mark.svg';
+import navIcon1 from '../assets/linkedin.svg';
+import navIcon2 from '../assets/github.svg';
+import navIcon3 from '../assets/curriculum.svg';
 import { useTranslation } from "react-i18next";
 import animNav from "../assets/output.gif";
 import { Link } from "@aws-amplify/ui-react";
+import Coming from "./Pop-up/coming";
 
 
 export const NavBar = () => {
@@ -19,6 +20,7 @@ export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [toggled, setToggled] = useState(false);
 
+  const [OpenCV, setOpenCV] = useState(false)
 
 
 
@@ -51,6 +53,7 @@ export const NavBar = () => {
 
 
   return (
+    <>
       <Navbar expand="lg" className={scrolled || toggled ? "scrolled" : ""} variant="dark" >
         <Container>
             <img className="animation-nav" src={animNav} />
@@ -67,14 +70,16 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/mathieu-chr%C3%A9tien-74578922b/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
-                <a href="" target="_blank"><img src={navIcon4} alt="Icon" /></a>
-                <a href="https://www.instagram.com/matchret/" target="_blank"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/mathieu-chr%C3%A9tien-74578922b/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://github.com/matchret" target="_blank"><img src={navIcon2} alt="Icon" /></a>
+              <a onClick={() => setOpenCV(true)}><img src={navIcon3} alt="Icon" /></a>
               </div>
                   <a role="button" onClick={()=> location.href='#connect'} className="vvd">{t("Navbar.Conne")}</a>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Coming open={OpenCV} onClose={()=> setOpenCV(false)}/>
+    </>
   )
 }

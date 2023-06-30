@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Coming = ({open, onClose}) => {
 if(!open) return null
   return (
@@ -9,6 +10,7 @@ if(!open) return null
     <p>Coming soon ... </p>
     </div>
     </section>
+    
   )
 };
 
