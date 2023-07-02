@@ -515,7 +515,7 @@ img.d-block {
   left: 0;
   width: 70%;/*100%*/
   height: 100%;
-  background: #250193;
+  background: #121212;
   transition: 1s;
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
@@ -564,11 +564,6 @@ background: linear-gradient(90deg, rgba(89,48,179,1) 10%, rgba(161,54,131,1) 90%
   background-size: 100% var(--bg-h);
   background-position-x: left;   
   }
-
-.card[role="telemetrie"] .details {
-  background: #121212;
-  height: 100.1%;
-}
 
 @media screen and (max-width: 1200px) {
   .card .image img {
@@ -733,4 +728,19 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   float: right;
   cursor: pointer;
 
+}
+
+.react-pdf__Document{
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+.react-pdf__Page__annotations.annotationLayer{
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.react-pdf__Page__textContent.textLayer{
+  max-height: 0px;
+  overflow: hidden;
 }

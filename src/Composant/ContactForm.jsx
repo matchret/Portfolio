@@ -10,7 +10,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense, useState } from "react";
 import AnimationContact from './Animation/AnimationContact';
-import Coming from "./Pop-up/Coming";
+import Coming from "./Pop-up/coming";
 
 //const AnimationContact = lazy(() => import('./Animation/AnimationContact'));
 
@@ -44,7 +44,7 @@ const handleFormSubmit = async(e) => {
 		<section>
 			<h2>{t("Form.title")}</h2>
             <AnimationContact />
-			<a onClick={()=> setOpenCV(true)}>Curriculum Vitae</a>
+			<a onClick={() => setOpenCV(true)}>Curriculum Vitae</a>
 			<Coming open={OpenCV} onClose={()=> setOpenCV(false)}/>
 		</section>
         </Col>

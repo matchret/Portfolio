@@ -7,7 +7,7 @@ import navIcon3 from '../assets/curriculum.svg';
 import { useTranslation } from "react-i18next";
 import animNav from "../assets/output.gif";
 import { Link } from "@aws-amplify/ui-react";
-import Coming from "./Pop-up/coming";
+import CV from "./Pop-up/CV";
 
 
 export const NavBar = () => {
@@ -79,7 +79,7 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Coming open={OpenCV} onClose={()=> setOpenCV(false)}/>
+      <CV open={OpenCV} onClose={()=> setOpenCV(false)}/>
     </>
   )
 }

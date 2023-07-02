@@ -19,7 +19,8 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
-    "react-lazy-load-image-component": "^1.6.0"
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-pdf": "^7.1.2"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.0.0",

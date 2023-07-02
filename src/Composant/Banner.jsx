@@ -20,8 +20,8 @@ export const Banner = () => {
                         <h1>{t("banner.je")}<span className="txt-rotate" ><TexteBanner/></span></h1>
                         <p>{t("banner.Presentation")}</p>
                         <div className="bottom-banner">
-                          <img className="profile-photo" src={PhotoProfile} alt="profile-photo co" />
-                          <button onClick={()=> location.href='#connect'}>{t("Navbar.Conne")} <img src={ArrowRightCircle} alt="" /></button>
+                            <img className="profile-photo" src={PhotoProfile} alt="profile-photo co" />
+                            <button onClick={()=> location.href='#connect'}>{t("Navbar.Conne")} <img src={ArrowRightCircle} alt="" /></button>
                         </div>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
