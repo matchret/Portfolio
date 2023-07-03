@@ -19,7 +19,7 @@ if(!open) return null
             <p onClick={onClose} className='closeBtn'>X</p>
             <center>
                 <div>
-                    <Document file="../src/assets/CV.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+                    <Document file="../CV.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from(new Array(numPages), (el,index)=> (
                         <Page  width={500} key={"Cv_page"}   pageNumber={index+1} />
                         )
