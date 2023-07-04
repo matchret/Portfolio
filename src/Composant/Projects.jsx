@@ -5,6 +5,7 @@ import Telemetrie from "../assets/Projects/Shema.png"
 import portfolio from '../assets/Projects/Portfolio.png'
 import ReseauAerien from '../assets/Projects/ReseauAerien.png'
 import Coming from "./Pop-up/coming";
+import ESP from "./Pop-up/ESP";
 
 
 export const Project = () => {
@@ -65,7 +66,7 @@ export const Project = () => {
             </Container>
             <Coming open={Open3} onClose={()=> setOpen3(false)}/>
             <Coming open={Open2} onClose={()=> setOpen2(false)}/>
-            <Coming open={Open1} onClose={()=> setOpen1(false)}/>
+            <ESP open={Open1} onClose={()=> setOpen1(false)}/>
         </section>
         
     )

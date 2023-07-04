@@ -3,6 +3,7 @@ import React from 'react'
 
 const Coming = ({open, onClose}) => {
 if(!open) return null
+
   return (
     <section onClick={onClose} className='overlay'> 
     <div onClick={(e) => {e.stopPropagation()}} className='container-overlay'>
