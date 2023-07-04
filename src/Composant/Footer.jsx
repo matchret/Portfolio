@@ -5,6 +5,7 @@ import navIcon2 from '../assets/github.svg';
 import navIcon3 from '../assets/curriculum.svg';
 import animNav from "../assets/output.gif";
 import Coming from "./Pop-up/coming";
+import CV from './Pop-up/CV';
 
 export const Footer = () => {
 	const [OpenCV, setOpenCV] = useState(false)
@@ -26,7 +27,7 @@ export const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <Coming open={OpenCV} onClose={()=> setOpenCV(false)}/>
+      <CV open={OpenCV} onClose={()=> setOpenCV(false)}/>
     </footer>
   )
 }

@@ -17,16 +17,13 @@ if(!open) return null
     <section onClick={onClose} className='overlay'> 
         <div onClick={(e) => {e.stopPropagation()}} className='container-overlay'>
             <p onClick={onClose} className='closeBtn'>X</p>
-            <center>
-                <div>
+            <button >Download</button>
                     <Document file="../CV.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from(new Array(numPages), (el,index)=> (
                         <Page  width={500} key={"Cv_page"}   pageNumber={index+1} />
                         )
                         )}
                     </Document>
-                </div>
-            </center>
         </div>
     </section>
     
