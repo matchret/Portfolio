@@ -125,7 +125,8 @@ export const Skills = ()=>{
                     <li><a href="https://graphql.org/" target='_blank'>Graphql</a></li>
                     <li><a href="https://aws.amazon.com/" target='_blank'>AWS</a></li>
                     <li><a href="https://www.solarwinds.com/" target='_blank'>Solar Wind</a></li>
-                    <li><a href="https://www.solarwinds.com/" target='_blank'>Solar Wind</a></li>
+                    <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/" target='_blank'>Linux</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/windows/business" target='_blank'>Windows</a></li>
                 </ul>
 
                 </Row>

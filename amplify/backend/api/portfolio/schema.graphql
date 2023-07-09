@@ -1,0 +1,7 @@
+type Sender @model @auth(rules:[{allow:public, operations:[create]}]) {
+  id: ID!
+  name: String!
+  email: String!
+  phone: String!
+  message: String!
+}

@@ -10,6 +10,24 @@
       "StackName": "amplify-portfolio-dev-01821",
       "StackId": "arn:aws:cloudformation:us-east-2:646579355751:stack/amplify-portfolio-dev-01821/7a73cdf0-1d46-11ee-be29-0adb786760bb",
       "AmplifyAppId": "d3jfr85jx3mqpl"
+    },
+    "categories": {
+      "auth": {
+        "portfolioe136a42f": {}
+      },
+      "function": {
+        "EmailSender": {
+          "sesEmail": "mathieuchretien1@gmail.com",
+          "deploymentBucketName": "amplify-portfolio-dev-01821-deployment",
+          "s3Key": "amplify-builds/EmailSender-50324956674643646849-build.zip"
+        }
+      },
+      "api": {
+        "portfolio": {}
+      },
+      "storage": {
+        "s3b4ad1b69": {}
+      }
     }
   }
 }

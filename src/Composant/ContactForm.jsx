@@ -3,7 +3,8 @@ import {
 	TextField,
 	PhoneNumberField,
 	TextAreaField } from "@aws-amplify/ui-react";
-import { API, graphqlOperation } from "aws-amplify";
+import { API } from "aws-amplify";
+import {createSender} from '../graphql/mutations'
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
@@ -21,13 +22,22 @@ export const ContactForm = () => {
 
 const handleFormSubmit = async(e) => {
     e.preventDefault()                             //IMPORTANT EMPECHE FONCTION DEFAULT
-
-	alert(
-		`Name: ${e.target.name.value}
-		Email: ${e.target.email.value}
-		Phone: ${e.target.phone_number.value}
-		Message: ${e.target.message.value}`
-	  );
+	const name = e.target.name.value
+	const email = e.target.email.value
+	const phone = e.target.phone_number.value
+	const message = e.target.message.value
+	
+	await API.graphql({
+		query: createSender,
+		variables: {
+			input: {
+				name,
+				email,
+				phone,
+				message,
+			},
+		},
+	})
 
 	}
 

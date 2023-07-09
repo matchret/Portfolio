@@ -1,0 +1,6 @@
+[
+  {
+    "Action": ["ses:SendRawEmail"],
+    "Resource": ["arn:aws:ses:us-east-2:646579355751:identity/mathieuchretien1@gmail.com"]
+  }
+]
