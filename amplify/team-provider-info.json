@@ -19,7 +19,7 @@
         "EmailSender": {
           "sesEmail": "mathieuchretien1@gmail.com",
           "deploymentBucketName": "amplify-portfolio-dev-01821-deployment",
-          "s3Key": "amplify-builds/EmailSender-50324956674643646849-build.zip"
+          "s3Key": "amplify-builds/EmailSender-7332416243376d724550-build.zip"
         }
       },
       "api": {

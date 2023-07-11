@@ -27,6 +27,8 @@ const handleFormSubmit = async(e) => {
 	const phone = e.target.phone_number.value
 	const message = e.target.message.value
 	
+
+try{
 	await API.graphql({
 		query: createSender,
 		variables: {
@@ -38,8 +40,13 @@ const handleFormSubmit = async(e) => {
 			},
 		},
 	})
-
-	}
+	document.getElementById("form").reset();
+	alert("Message sended!!!")
+}catch(e){
+	console.error('ERROR', e)
+	alert("message fail!!!")
+  }
+}
 
 
     return (
@@ -56,7 +63,7 @@ const handleFormSubmit = async(e) => {
 
         <Col xs={12} md={7} xl={7}>
             <h3>{t("Form.form")}</h3>
-            <form onSubmit={handleFormSubmit}>
+            <form id="form" onSubmit={handleFormSubmit}>
 				<TextField
 					required
 					label={t("Form.name")}
