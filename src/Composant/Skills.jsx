@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Carousel } from "react-bootstrap";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import Meter1 from '../assets/meter1.svg';
-import Meter2 from '../assets/meter2.svg';
-import Meter3 from '../assets/meter3.svg';
+import Meter95 from '../assets/meter1.svg';
+import Meter80 from '../assets/meter2.svg';
+import Meter90 from '../assets/meter3.svg';
 
 import LogoReact from '../assets/Image/Technology/React-icon.png';
 import LogoJS from '../assets/Image/Technology/JavaScript-Logo.png';
@@ -44,31 +44,31 @@ export const Skills = ()=>{
                 <Row>
                     <Carousel slide="true">
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="First slide"  src={Meter1} effect="blur" />
+                        <LazyLoadImage className="d-block" alt="First slide"  src={Meter95} effect="blur" />
                             <Carousel.Caption>
                                 <h4>{t("Skills.s1")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="2 slide" src={Meter2} effect="blur" />
+                        <LazyLoadImage className="d-block" alt="2 slide" src={Meter95} effect="blur" />
                             <Carousel.Caption>
                             <h4>{t("Skills.s2")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter3}  effect="blur" />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter80}  effect="blur" />
                             <Carousel.Caption>
                                 <h4>{t("Skills.s3")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur"/>
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter90} effect="blur"/>
                             <Carousel.Caption>
                                 <h4>{t("Skills.s4")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter2} effect="blur" />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter80} effect="blur" />
                             <Carousel.Caption>
                                 <h4>{t("Skills.s5")}</h4>
                             </Carousel.Caption>
