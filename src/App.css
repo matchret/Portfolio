@@ -465,7 +465,7 @@ img.d-block {
   }
   .carousel .framework{
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -589,7 +589,9 @@ background: linear-gradient(90deg, rgba(89,48,179,1) 10%, rgba(161,54,131,1) 90%
 
 @media screen and (max-width: 991px) {
   .card .image img {
-    min-height: 85vh;
+    width: 100%;
+    min-height: 100vw;
+    object-fit: cover;
   }
 
 }

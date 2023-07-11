@@ -36,4 +36,5 @@ exports.handler = async(event) => {
       }
     }
   }
+  return 'done';
 }
