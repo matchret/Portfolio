@@ -18,6 +18,7 @@ This is my career portfolio.
 "aws-sdk": "^2.1413.0"  
 "nodemailer": "^6.9.3"
 # Frontend
+## Composant
 
 
 # Backend
