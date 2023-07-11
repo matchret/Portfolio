@@ -1,5 +1,5 @@
 # Portfolio
-![alt text](https://github.com/matchret/Portfolio/blob/clean/banner.png?raw=true)
+![alt text](https://github.com/matchret/Portfolio/tree/clean/banner.png?raw=true)
 This is my career portfolion
 ## Dependency
 - Frontend  
