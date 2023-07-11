@@ -2,7 +2,7 @@
 This is my career portfolion
 ## Dependency
 - Frontend
-"@aws-amplify/ui-react": "^5.0.4",
+"@aws-amplify/ui-react": "^5.0.4"/n
 "aws-amplify": "^5.3.3",
 "bootstrap": "^5.3.0",
 "i18next": "^23.2.7",
