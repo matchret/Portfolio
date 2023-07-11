@@ -1,7 +1,7 @@
-# Portfolio
 ![alt text](https://github.com/matchret/Portfolio/blob/43479f80d2c55322200f2fa55ec34faf60c78959/banner.png?raw=true)  
-This is my career portfolion
-## Dependency
+
+This is my career portfolio.
+# Dependency
 - Frontend  
 "@aws-amplify/ui-react": "^5.0.4"  
 "aws-amplify": "^5.3.3"  
@@ -16,5 +16,10 @@ This is my career portfolion
 "react-pdf": "^7.1.2"  
 - Backend  
 "aws-sdk": "^2.1413.0"  
-"nodemailer": "^6.9.3"  
+"nodemailer": "^6.9.3"
+# Frontend
+
+
+# Backend
+The only backend needed for my website was the contact form for sending me email.
   
