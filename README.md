@@ -25,7 +25,7 @@ Skills
 Project  
 ContactForm  
 Footer  
-- Modal Componant  
+- Modal Componant<br/>
 CV in (Navbar, Contactform, Footer)  
 ESP in (Project)  
 Algo in (Project)
