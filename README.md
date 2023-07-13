@@ -40,10 +40,10 @@ The only backend needed for my website was the contact form for sending me email
 
 ## TO DO/FIX
 Boutton se connecter(Navbar/banner)  
-PDF download button
-Modal exit button
-Change profile photo
-Portfolio modal
-Algorithm modal
+PDF download button  
+Modal exit button  
+Change profile photo  
+Portfolio modal  
+Algorithm modal  
 Contact form (UI  alert) 
   
