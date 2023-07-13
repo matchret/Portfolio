@@ -25,12 +25,12 @@ Skills
 Project  
 ContactForm  
 Footer  
--Modal Componant
+-Modal Componant  
 CV
 ESP
 Algo
 Portfolio  
--Animation Componant
+-Animation Componant  
 AnimationBanner
 AnimationContact
 TexteBanner 
