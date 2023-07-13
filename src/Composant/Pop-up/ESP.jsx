@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Document, Page, pdfjs} from 'react-pdf';
+import CloseButton from 'react-bootstrap/CloseButton';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
@@ -29,7 +30,7 @@ if(!open) return null
   return (
     <section onClick={onClose} className='overlay'> 
         <div onClick={(e) => {e.stopPropagation()}} className='container-overlay'>
-            <p onClick={onClose} className='closeBtn'>X</p>
+            <CloseButton onClick={onClose}/>
             <button onClick={PDFDownload}>Download</button>
                     <Document file="../ESP.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from(new Array(numPages), (el,index)=> (
