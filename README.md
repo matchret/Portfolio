@@ -26,14 +26,14 @@ Project
 ContactForm  
 Footer  
 - Modal Componant  
-CV
-ESP
-Algo
+CV  
+ESP  
+Algo  
 Portfolio  
 - Animation Componant  
-AnimationBanner
-AnimationContact
-TexteBanner 
+AnimationBanner  
+AnimationContact  
+TexteBanner
 ## Backend
 The only backend needed for my website was the contact form for sending me email.
 
