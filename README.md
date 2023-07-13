@@ -19,21 +19,21 @@ This is my career portfolio. I use AWS amplify to
 "nodemailer": "^6.9.3"  (Easier mail backend support attachement)  
 ## Frontend
 - Main Componant  
-NavBar  
-Banner  
-Skills  
-Project  
-ContactForm  
+  NavBar  
+  Banner  
+  Skills  
+  Project  
+  ContactForm  
 Footer  
 - Modal Componant
-CV in (Navbar, Contactform, Footer)  
-ESP in (Project)  
-Algo in (Project)
-Portfolio in (Project)
+  CV in (Navbar, Contactform, Footer)  
+  ESP in (Project)  
+  Algo in (Project)
+  Portfolio in (Project)
 - Animation Componant  
-AnimationBanner in (Banner lottie animation)  
-AnimationContact in (Contactform lottie animation)  
-TexteBanner in (Banner text animation)  
+  AnimationBanner in (Banner lottie animation)  
+  AnimationContact in (Contactform lottie animation)  
+  TexteBanner in (Banner text animation)  
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).
 
 ## Backend
