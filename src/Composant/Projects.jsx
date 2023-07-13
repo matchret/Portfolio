@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Telemetrie from "../assets/Projects/Shema.png"
 import portfolio from '../assets/Projects/Portfolio.png'
 import ReseauAerien from '../assets/Projects/ReseauAerien.png'
 import Coming from "./Pop-up/coming";
 import ESP from "./Pop-up/ESP";
-
+import Portfolio from "./Pop-up/portfolio";
 
 export const Project = () => {
     const [t]= useTranslation('translation');  //Translation i18next
 
-    const [Open1, setOpen1] = useState(false) //
+    const [Open1, setOpen1] = useState(false) 
     const [Open2, setOpen2] = useState(false)
     const [Open3, setOpen3] = useState(false)
 
@@ -30,7 +30,7 @@ export const Project = () => {
                     <div className="details">
                         <div className="center">
                             <h3>{t("Projects.portfolio.title")}</h3>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <p>{t("Projects.portfolio.text")}</p>
                             <a  onClick={()=> setOpen3(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ export const Project = () => {
                     <div className="details">
                         <div className="center">
                             <h3>{t("Projects.algo.title")}</h3>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <p>{t("Projects.algo.text")}</p>
                             <a  onClick={()=> setOpen2(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
@@ -58,17 +58,16 @@ export const Project = () => {
                     <div className="details">
                         <div className="center">
                             <h3>{t("Projects.ESP.title")}</h3>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <p>{t("Projects.ESP.text")}</p>
                             <a onClick={()=> setOpen1(true)}>{t("Projects.more")}</a>
                         </div>
                     </div>
                 </div>
                 </Row>  
             </Container>
-            <Coming open={Open3} onClose={()=> setOpen3(false)}/>
+            <Portfolio open={Open3} onClose={()=> setOpen3(false)}/>
             <Coming open={Open2} onClose={()=> setOpen2(false)}/>
             <ESP open={Open1} onClose={()=> setOpen1(false)}/>
         </section>
-        
     )
 }

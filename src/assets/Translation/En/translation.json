@@ -17,7 +17,7 @@
 },
 
 "Skills":{
-    "title":"Skills",
+    "title":"Areas of expertise",
     "text":"During my career I have developed several skills in different fields that can be used when designing different projects. Here are some of these skills that I was able to develop in the last couple of years.",
     "s1":"Programmer",
     "s2":"Computer network",
@@ -33,15 +33,15 @@
     "text":"Here are some projects that I had the chance to develop in my career, hoping to add more in the future.",
     "portfolio":{
         "title":"Portfolio Website",
-        "text":""
+        "text":"My first web portfolio developed in a react framework and hosted in the AWS cloud."
     },
     "algo":{
         "title":"Algorithm: The shortest path",
-        "text":""
+        "text":"An algorithm project where I developed a functional graph and the algorithm of Dijkstra/Bellman-Ford to find the shortest path."
     },
     "ESP":{
         "title":"Buoy Mounted Environmental Telemetry System",
-        "text":""
+        "text":"The system obtains several data including humidity, pressure and temperature at different depths on a buoy on the lake. The data must then be transmitted remotely to the computer network to allow access to the data for research."
     },
     "more":"Known more ..."
 },

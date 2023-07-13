@@ -17,12 +17,12 @@
 },
 
 "Skills":{
-    "title":"Compétence",
+    "title":"Domaine de compétence",
     "text":"Au cours de ma carrièrre j'ai dévelopée plusieurs compétences dans différents domaines qui peuvent être utilisée lors de la conception de différents projects. Voici une partie de ces compétences que j'ai pu déveloper dans les dernière année.",
     "s1":"Programmeur",
     "s2":"Réseaux Informatiques",
     "s3":"Électronique",
-    "s4":"Project management",
+    "s4":"Gestion de projet",
     "s5":"",
     "tech": "Technology utilisé"
 },
@@ -32,15 +32,15 @@
     "text":"Voici quelques projects que j'ai eu la chance de déveloper dans ma carrière, en espérant d'en ajouter plus dans le future.",
     "portfolio":{
         "title":"Portfolio site Web",
-        "text":""
+        "text":"Mon premier portfolio web dévelopé dans un framework react et hébergé dans le nuage AWS."
     },
     "algo":{
         "title":"Algorithme: Le chemin le plus court",
-        "text":""
+        "text":"Un projet d'algorithme où j'ai développé un graphe fonctionnel et l'algorithme de Dijkstra/Bellman-Ford pour trouver le chemin le plus court."
     },
     "ESP":{
         "title":"Système de télémétire environnemental monté sur bouée",
-        "text":""
+        "text":"Le système obtien de plusieurs données dont l'humidité, la pression et la température à différente profondeur sur une bouée sur le lac. Les données doivent ensuite être transmises à distance au réseau informatique pour permettre l'accès aux données afin d'étudier."
     },
     "more":"En savoir plus ..."
     

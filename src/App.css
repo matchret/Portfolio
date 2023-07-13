@@ -140,6 +140,10 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
+
+
+
 .navbar-text a[role=button] {
   font-weight: 700;
   color: #fff;
@@ -173,6 +177,12 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+
+
+
+
+
+
 
 
 .nav-logo{
@@ -265,55 +275,89 @@ nav.navbar .animation-nav {
   line-height: 1.5em;
   width: 96%;
 }
+
+
+.banner button span {
+  z-index: 1;
+  position: relative;
+  overflow-wrap: break-word;;
+
+}
+
+.banner button:hover span {
+  color: #000;
+}
+
 .banner button {
-  margin: 8% 8% 0 8%;
-  height: 100px;
-  color: #fff;
-  border: 1px solid #fff;
+  margin: 3vw 0 3vw 5vw;
+  max-height: 150px;
+  appearance: none;
+  background-color: #121212;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline;
+  font-family: Clarkson,Helvetica,sans-serif;
   font-size: 20px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
-  border-radius: 10px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  color: #fff;
+  border-color: #fff;
+}
+
+.banner button:hover{
+  border-radius: 8px;
+  border-color: #121212;
+  transition: 500ms;
+ 
+}
+
+.banner button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  border-radius: 8px;
+  border-width: 0;
+}
+
+.banner button::before{
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #fff;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+
 }
 
 .banner button img {
+  width: 20px;
   margin-left: 10px;
   filter: invert(1);
-}
-
-.banner button:hover {
-  color: #000000;
-  border: 1px solid #000000;
-}
-.banner button::before{
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-  border-radius: 10px;
 }
 
 .banner button:hover img {
   filter: invert(0);
   transition: 0.3s ease-in-out;
-}
-
-
-.banner button::after {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
 }
 
 .banner .bottom-banner{
@@ -347,12 +391,16 @@ nav.navbar .animation-nav {
 .banner h1 {
   min-height: 195px;
 }
+.banner button {
+  margin: 0 0 0 15px;
+  align-self: center;
+}
 }
 
 @media screen and (max-width: 768px) {
   .banner .profile-photo {
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 
@@ -374,6 +422,10 @@ nav.navbar .animation-nav {
   padding: 10px 20px 20px 20px;
   width: auto;
   align-items: center;
+}
+
+.skill h3{
+  margin-bottom: 15px;
 }
 
 .skill-box p{
