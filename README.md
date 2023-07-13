@@ -25,7 +25,7 @@ Skills
 Project  
 ContactForm  
 Footer  
-- Modal Componant<br/>
+- Modal Componant
 CV in (Navbar, Contactform, Footer)  
 ESP in (Project)  
 Algo in (Project)
@@ -35,8 +35,11 @@ AnimationBanner in (Banner lottie animation)
 AnimationContact in (Contactform lottie animation)  
 TexteBanner in (Banner text animation)  
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).
+
 ## Backend
-The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.  
+
+The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.
+
 Here is the shema:
 ```JavaScript
 type Sender @model @auth(rules:[{allow:public, operations:[create]}]) {
@@ -47,6 +50,7 @@ type Sender @model @auth(rules:[{allow:public, operations:[create]}]) {
   message: String!
 }
 ```
+
 Here is the Javascript function:
 ```JavaScript
 /* Amplify Params - DO NOT EDIT
@@ -90,6 +94,7 @@ exports.handler = async(event) => {
   return 'done';
 }
 ```
+
 With this when a qraphql is created the function will automatically trigger the node.js function. (Trigger Lambda)  
 Note: Email must be a verified emain in the Simpl Email Service of AWS.(SES_EMAIL = email of choice)  
 
