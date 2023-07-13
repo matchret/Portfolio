@@ -1,5 +1,5 @@
 # Portfolio
-<a href="www.mathieuchretien.com" target='_blank'>Link to Website<a>
+www.mathieuchretien.com<br/>
 This is my career portfolio.
 # Dependency
 - Frontend  
