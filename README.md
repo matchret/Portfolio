@@ -102,7 +102,7 @@ Note: Email must be a verified email in the Simpl Email Service of AWS.(SES_EMAI
 Boutton se connecter(Navbar/banner)  
 PDF download button  
 Modal exit button  
-Change profile photo 
+Change profile photo  
 Project center text still lorem...  
 Portfolio modal  
 Algorithm modal  
