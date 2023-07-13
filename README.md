@@ -1,4 +1,5 @@
 # Portfolio
+![alt text](https://www.mathieuchretien.com/assets/Portfolio-b18b4d6e.png)
 www.mathieuchretien.com  
 This is my career portfolio created in React. I use AWS amplify to host this website.
 ## Dependency
