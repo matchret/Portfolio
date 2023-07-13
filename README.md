@@ -18,15 +18,31 @@ This is my career portfolio.
 "aws-sdk": "^2.1413.0"  (Service aws)  
 "nodemailer": "^6.9.3"  (Easier mail backend support attachement)  
 ## Frontend
-- Composant  
+- Main Componant  
 NavBar  
 Banner  
 Skills  
 Project  
 ContactForm  
-Footer   
-
-
+Footer  
+-Modal Componant
+CV
+ESP
+Algo
+Portfolio  
+-Animation Componant
+AnimationBanner
+AnimationContact
+TexteBanner 
 ## Backend
 The only backend needed for my website was the contact form for sending me email.
+
+## TO DO/FIX
+Boutton se connecter(Navbar/banner)  
+PDF download button
+Modal exit button
+Change profile photo
+Portfolio modal
+Algorithm modal
+Contact form (UI  alert) 
   
