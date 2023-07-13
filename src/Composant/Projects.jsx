@@ -6,7 +6,7 @@ import portfolio from '../assets/Projects/Portfolio.png'
 import ReseauAerien from '../assets/Projects/ReseauAerien.png'
 import Coming from "./Pop-up/coming";
 import ESP from "./Pop-up/ESP";
-import Portfolio from "./Pop-up/portfolio";
+import Portfolio from "./Pop-up/Portfolio";
 
 export const Project = () => {
     const [t]= useTranslation('translation');  //Translation i18next
