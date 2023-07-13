@@ -31,13 +31,16 @@ ESP in (Project)
 Algo in (Project)
 Portfolio in (Project)
 - Animation Componant  
-AnimationBanner in (Banner)  
-AnimationContact in (Contactform)  
-TexteBanner in (Banner)  
+AnimationBanner in (Banner lottie animation)  
+AnimationContact in (Contactform lottie animation)  
+TexteBanner in (Banner text animation)  
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).
 ## Backend
-The only backend needed for my website was the contact form for sending me email.
-
+The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.
+Here is the shema:
+'''JavaScript
+The only backend ne
+'''
 ## TO DO/FIX
 Boutton se connecter(Navbar/banner)  
 PDF download button  
@@ -46,4 +49,5 @@ Change profile photo
 Portfolio modal  
 Algorithm modal  
 Contact form (UI  alert) 
+ADD attachement email (S3 bucket needed)
   
