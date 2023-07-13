@@ -18,7 +18,7 @@ This is my career portfolio.
 "aws-sdk": "^2.1413.0"  (Service aws)  
 "nodemailer": "^6.9.3"  (Easier mail backend support attachement)  
 ## Frontend
-- Composant
+- Composant  
 NavBar  
 Banner  
 Skills  
