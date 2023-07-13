@@ -105,6 +105,7 @@ Modal exit button
 Project center text still lorem...  
 Portfolio modal  
 Algorithm modal  
+Traduction PDF  
 Contact form (UI  alert)  
 ADD attachement email (S3 bucket needed)
   
