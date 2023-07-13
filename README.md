@@ -102,7 +102,6 @@ Note: Email must be a verified email in the Simple Email Service of AWS. (SES_EM
 Boutton se connecter(Navbar/banner)  
 PDF download button  
 Modal exit button  
-Project center text still lorem...  
 Portfolio modal  
 Algorithm modal  
 Traduction PDF  
