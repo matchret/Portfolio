@@ -26,7 +26,7 @@ All custom CSS is in App.css
   Project  
   ContactForm  
 Footer  
-- Modal Componant
+- Modal Componant  
   CV in (Navbar, Contactform, Footer)  
   ESP in (Project)  
   Algo in (Project)
