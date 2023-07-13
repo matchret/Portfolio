@@ -38,9 +38,9 @@ Note: The animation in the navbar and footer use a gif because lottie was creati
 ## Backend
 The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.
 Here is the shema:
-'''JavaScript
+```JavaScript
 The only backend ne
-'''
+```
 ## TO DO/FIX
 Boutton se connecter(Navbar/banner)  
 PDF download button  
