@@ -1,6 +1,6 @@
 # Portfolio
-www.mathieuchretien.com<br/>
-This is my career portfolio. I use AWS amplify to
+www.mathieuchretien.com  
+This is my career portfolio created in React. I use AWS amplify to host this website.
 ## Dependency
 - Frontend  
 "@aws-amplify/ui-react": "^5.0.4"  (Contact form input)  
@@ -96,7 +96,7 @@ exports.handler = async(event) => {
 ```
 
 With this when a qraphql is created the function will automatically trigger the node.js function. (Trigger Lambda)  
-Note: Email must be a verified emain in the Simpl Email Service of AWS.(SES_EMAIL = email of choice)  
+Note: Email must be a verified email in the Simpl Email Service of AWS.(SES_EMAIL = email of choice)  
 
 ## TO DO/FIX
 Boutton se connecter(Navbar/banner)  
