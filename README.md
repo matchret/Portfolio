@@ -74,7 +74,7 @@ exports.handler = async(event) => {
 			//pull off items from stream
 			const userName = streamedItem.dynamodb.NewImage.name.S
 			const userEmail = streamedItem.dynamodb.NewImage.email.S
-      const userPhone = streamedItem.dynamodb.NewImage.phone.S
+                        const userPhone = streamedItem.dynamodb.NewImage.phone.S
 			const userMessage = streamedItem.dynamodb.NewImage.message.S
 
 
