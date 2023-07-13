@@ -36,7 +36,7 @@ AnimationContact in (Contactform lottie animation)
 TexteBanner in (Banner text animation)  
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).
 ## Backend
-The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.
+The only backend needed for my website was the contact form for sending me email. To do so I used a graphql query link to a lambda function in AWS.  
 Here is the shema:
 ```JavaScript
 type Sender @model @auth(rules:[{allow:public, operations:[create]}]) {
