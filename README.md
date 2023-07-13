@@ -99,12 +99,13 @@ With this when a qraphql is created the function will automatically trigger the 
 Note: Email must be a verified email in the Simple Email Service of AWS. (SES_EMAIL = email of choice)  
 
 ## TO DO/FIX
-Boutton se connecter(Navbar/banner)  
-PDF download button  
+Boutton se connecter(Navbar)  
 Modal exit button  
 Portfolio modal  
 Algorithm modal  
 Traduction PDF  
-Contact form (UI  alert)  
-ADD attachement email (S3 bucket needed)
-  
+Contact form (better UI  alert)  
+Stop body scrooling on modal  
+
+ADD attachement email (S3 bucket needed) 
+Stop animation when off screen  
