@@ -26,14 +26,15 @@ Project
 ContactForm  
 Footer  
 - Modal Componant  
-CV  
-ESP  
-Algo  
-Portfolio  
+CV in (Navbar, Contactform, Footer)  
+ESP in (Project)  
+Algo in (Project)
+Portfolio in (Project)
 - Animation Componant  
-AnimationBanner  
-AnimationContact  
-TexteBanner
+AnimationBanner in (Banner)  
+AnimationContact in (Contactform)  
+TexteBanner in (Banner)  
+Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).
 ## Backend
 The only backend needed for my website was the contact form for sending me email.
 
