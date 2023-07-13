@@ -70,7 +70,7 @@ export const NavBar = () => {
                 <a href="https://github.com/matchret" target="_blank"><img src={navIcon2} alt="Icon" /></a>
                 <a href="#" onClick={() => setOpenCV(true)}><img src={navIcon3} alt="Icon" /></a>
                 </div>
-                    <a role="button" onClick={()=> location.href='#connect'} className="vvd">{t("Navbar.Conne")}</a>
+                    <button onClick={()=> location.href='#connect'}><span>{t("Navbar.Conne")}</span></button>
               </span>
             </Navbar.Collapse>
           </Container>

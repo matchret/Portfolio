@@ -22,7 +22,7 @@ if(!open) return null
     <a href="https://github.com/matchret/Portfolio/tree/Clean" target='_blank'>
     <button>Git Repo</button>
     </a>
-    <Document file="../ESP.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+    <Document file="../Portfolio.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from(new Array(numPages), (el,index)=> (
                         <Page  width={500} pageNumber={index+1} key={index+1}/>
                         )
