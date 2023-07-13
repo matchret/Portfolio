@@ -96,7 +96,7 @@ exports.handler = async(event) => {
 ```
 
 With this when a qraphql is created the function will automatically trigger the node.js function. (Trigger Lambda)  
-Note: Email must be a verified email in the Simpl Email Service of AWS.(SES_EMAIL = email of choice)  
+Note: Email must be a verified email in the Simple Email Service of AWS. (SES_EMAIL = email of choice)  
 
 ## TO DO/FIX
 Boutton se connecter(Navbar/banner)  
