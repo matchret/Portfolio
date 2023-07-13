@@ -34,7 +34,7 @@ Footer
 - Animation Componant  
   AnimationBanner in (Banner lottie animation)  
   AnimationContact in (Contactform lottie animation)  
-  TexteBanner in (Banner text animation)  <br/>
+  TexteBanner in (Banner text animation)  
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).  
 ## Backend
 
