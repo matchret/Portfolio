@@ -100,9 +100,6 @@ With this when a qraphql is created the function will automatically trigger the 
 Note: Email must be a verified email in the Simple Email Service of AWS. (SES_EMAIL = email of choice)  
 
 ## TO DO/FIX
-Boutton se connecter(Navbar)  
-Modal exit button  
-Portfolio modal  
 Algorithm modal  
 Traduction PDF  
 Contact form (better UI  alert)  
