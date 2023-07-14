@@ -39,7 +39,7 @@ Footer
 Note: The animation in the navbar and footer use a gif because lottie was creating a DOM too big (over 12,000 element).  
 ## Backend
 
-The only backend needed for my website was the contact form for sending me email. To do so I used a graphql mutation link to a lambda function in AWS.
+The only backend needed for my website was the contact form for sending me email. To do so I used a graphql API link to a lambda function in AWS.
 
 Here is the shema:
 ```JavaScript
