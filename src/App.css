@@ -207,7 +207,7 @@ span.navbar-text {
 .navbar-text button:hover::before {
 	animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-  border-radius: 8px;
+  border-radius: 5px;
   border-width: 0;
 }
 

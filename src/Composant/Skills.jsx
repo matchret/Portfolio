@@ -62,13 +62,13 @@ export const Skills = ()=>{
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter90} effect="blur"/>
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter80} effect="blur"/>
                             <Carousel.Caption>
                                 <h4>{t("Skills.s4")}</h4>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter80} effect="blur" />
+                        <LazyLoadImage className="d-block" alt="Third slide" src={Meter90} effect="blur" />
                             <Carousel.Caption>
                                 <h4>{t("Skills.s5")}</h4>
                             </Carousel.Caption>

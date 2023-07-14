@@ -51,7 +51,7 @@ export const Project = () => {
                 </div>
                 </Row>
                 <Row>
-                <div className="card" role="telemetrie">
+                <div className="card">
                     <div className="image">
                         <img src={Telemetrie} alt='…' loading= 'lazy'/>
                     </div>
