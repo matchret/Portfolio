@@ -1,0 +1,69 @@
+{
+"Navbar":{
+    "Ho":"À propos",
+    "Sk":"Talents",
+    "Proj":"Projets",
+    "Lan":"Language",
+    "Fr":"Français",
+    "En":"Englais",
+    "Conne":"Se connecté"
+},
+
+"banner":{
+    "tag":"Bonjour, mon nom est Mathieu",
+    "je":"Je suis un: ",
+    "list":["Développeur Web", "UI/UX Désigneur", "Technicien de Réseaux"],
+    "Presentation":"Je suis présentement étudiant en informatique à l'Université Laval. J'ai toujours été intéressé dans les domaines technologiques ce qui m'a valu un diplôme collégiale en génie électrique / télécommunications et réseaux. J'espère continuer mon cheminement dans le domaine avec plusieurs projets intéresants."
+},
+
+"Skills":{
+    "title":"Domaine de compétence",
+    "text":"Au cours de ma carrière j'ai dévelopé plusieurs compétences dans différents domaines qui peuvent être utilisées lors de la conception de différents projets. Voici une partie de ces compétences que j'ai pu développer dans les dernières années.",
+    "s1":"Programmeur",
+    "s2":"Réseaux Informatiques",
+    "s3":"Électronique",
+    "s4":"Gestion de projet",
+    "s5":"Service client",
+    "tech": "Technologies utilisées"
+},
+
+"Projects":{
+    "title":"Projects",
+    "text":"Voici quelques projects que j'ai eu la chance de déveloper dans ma carrière, en espérant d'en ajouter plus dans le future.",
+    "portfolio":{
+        "title":"Portfolio site Web",
+        "text":"Mon premier portfolio web dévelopé dans un framework react et hébergé dans le nuage AWS."
+    },
+    "algo":{
+        "title":"Algorithme: Le chemin le plus court",
+        "text":"Un projet d'algorithme où j'ai développé un graphe fonctionnel et l'algorithme de Dijkstra/Bellman-Ford pour trouver le chemin le plus court."
+    },
+    "ESP":{
+        "title":"Système de télémétire environnemental monté sur bouée",
+        "text":"Le système obtien de plusieurs données dont l'humidité, la pression et la température à différente profondeur sur une bouée sur le lac. Les données doivent ensuite être transmises à distance au réseau informatique pour permettre l'accès aux données afin d'étudier."
+    },
+    "more":"En savoir plus ..."
+    
+},
+"Form":{
+    "title": "Entrer en contact",
+    "form":"Formulaire",
+    "name":"Votre nom",
+    "firstlast":"Prénom Nom",
+    "youemail":"votre@email.com",
+    "message":"Entrer votre message",
+    "send":"Envoyer"
+
+},
+"Fotter":{
+    "Copy":"Copyright 2023. Tous droits réservés"
+},
+
+"Pop-up":{
+    "CV": "../CV.pdf",
+    "ESP": "../ESP.pdf",
+    "Portfolio": "../Portfolio.pdf",
+    "Download": "Télécharger",
+    "Git": "Dépôt Github" 
+}
+}
